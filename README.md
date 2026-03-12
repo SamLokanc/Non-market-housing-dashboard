@@ -4,3 +4,17 @@ This dashboard displays information regarding non-market housing projects in Van
 ## Deployment
 https://019ce3dc-5ecd-e964-fdf0-8bb0b0ad0a21.share.connect.posit.cloud/
 ## Running Locally
+### Cloning the Repository
+```{bash}
+git clone git@github.com:SamLokanc/Non-market-housing-dashboard.git
+cd Non-market-housing-dashboard
+```
+### Setting up the Environment
+```{r}
+r
+renv::restore()
+```
+### Running the Dashboard
+```{r}
+runApp()
+```
