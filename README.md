@@ -14,7 +14,8 @@ cd Non-market-housing-dashboard
 r
 renv::restore()
 ```
-### Running the Dashboard
+Respond with 1 to the prompt that `renv::restore()` provides.
+### Running the Dashboard Locally
 ```{r}
-runApp()
+shiny::runApp()
 ```
