@@ -58,12 +58,7 @@ server <- function(input, output) {
   output$housingMap <- renderLeaflet({
     leaflet(filtered_data()) |>
       addProviderTiles(providers$CartoDB.Positron) |>
-      addCircleMarkers(
-        radius = 6,
-        color  = "#007bc2",
-        stroke = TRUE,
-        weight = 1,
-        opacity = 0.8,
+      addMarkers(
         popup = ~paste0(
           "<strong>", name, "</strong><br>",
           address, "<br>",
